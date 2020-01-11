@@ -18,7 +18,19 @@ class PythonOrgSearch(unittest.TestCase):
 
     def test_resizable(self):
         module = self.module
-        module.resizable()    
+        module.resizable()
+
+    def test_selectable(self):
+        module = self.module
+        module.selectable()
+
+    def test_autocomplete(self):
+        module = self.module
+        module.autocomplete()
+        
+    def test_accordion(self):
+        module = self.module
+        module.accordion()
 
     def tearDown(self):
         self.driver.close()
